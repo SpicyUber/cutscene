@@ -50,7 +50,7 @@ position: fixed;
     <source src="overlay.mp4" type="video/mp4">
   </video>
         <div class="thediv">
-      <video id="myvideo" onplay="hideThat()" onended="hideThat()"><source src="video.mp4" type="video/mp4" id="masource"></video>
+      <video preload="auto" id="myvideo" onplay="hideThat()" onended="hideThat()"><source src="video.mp4" type="video/mp4" id="masource"></video>
       <button id="mybutton" onclick="hideThatS()"><i class="fa fa-play"></i></button></div>
     </body>
 </html>
