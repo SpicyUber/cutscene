@@ -12,6 +12,7 @@
                 flex:1;
                 justify-content: center;
                 align-items: center;
+                object-fit: fill;
                 
               flex-shrink: 1;
         
@@ -20,9 +21,10 @@
             video { 
                 position:relative;
                 display: flex;
-                max-width:90%;
-                min-width:100%;
-                height: auto;
+                width:90%;
+                
+                
+                
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0 7.5px 25px 7.5px #ffffff10;
@@ -52,14 +54,8 @@
     
     border: 0;
 }
-            .start{align-self: flex-start;
-            }
-            .end{align-self: flex-end;}
-            #myVideo {
 
-  min-width: 100%;
-  min-height: 100%;
-}
+
             </style>
                 
                    
@@ -72,9 +68,9 @@
         <!-- The video -->
 
         <div class="thediv">
-          <div class="start"></div>
+          
       <video id="myvideo" onplay="hideThat()" onended="hideThat()"><source src="video.mp4" type="video/mp4" id="masource"></video>
-      <div class="end"></div>  
+      
      
       <button id="mybutton"  onclick="hideThatS()"><i class="fa fa-play" aria-hidden="true" ></i></button></div>
       
