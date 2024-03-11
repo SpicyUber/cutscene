@@ -4,6 +4,14 @@ function hideThat(){
     var button= document.getElementById("mybutton");
    
     button.innerHTML='<i class="fa fa-play"></i>';}
+function closeThat(){
+    var davideo= document.getElementById("myvideo");
+    var dasource= document.getElementById("masource");
+    var button= document.getElementById("mybutton");
+    myvideo.remove();
+    
+
+}
 function hideThatS(){
    var davideo= document.getElementById("myvideo");
    var dasource= document.getElementById("masource");
