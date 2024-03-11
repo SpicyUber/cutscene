@@ -2,8 +2,8 @@ function hideThat(){
     var davideo= document.getElementById("myvideo");
     var dasource= document.getElementById("masource");
     var button= document.getElementById("mybutton");
-    if(davideo.paused){button.innerHTML='<i class="fa fa-rotate-right"></i>';button.style.opacity=1;}
-    else{ button.innerHTML='<i class="fa fa-play"></i>';}}
+   
+    button.innerHTML='<i class="fa fa-play"></i>';}
 function hideThatS(){
    var davideo= document.getElementById("myvideo");
    var dasource= document.getElementById("masource");
@@ -17,10 +17,10 @@ function fadeOutEffect(){
                 fadeTarget.style.opacity = 1;
             }
             if (fadeTarget.style.opacity > 0) {
-                fadeTarget.style.opacity -= 0.2;
+                fadeTarget.style.opacity -= 0.04;
             } else {
                 clearInterval(fadeEffect);
             }
-        }, 200);
+        }, 10);
     
 }
